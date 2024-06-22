@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayoutKalah">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Yah, anda kalah \n ingin mencoba lagi🙂‍😭? "
+        android:textSize="30sp"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/text"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/yesBtn"
+            android:layout_weight="1"
+            app:cornerRadius="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iya"
+            android:backgroundTint="#204A9E"
+            android:layout_marginHorizontal="20dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tidakBtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tidak"
+            app:cornerRadius="5dp"
+            android:backgroundTint="#204A9E"
+            android:layout_marginHorizontal="20dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

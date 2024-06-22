@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="70dp"
+        app:cornerRadius="4dp"
+        android:backgroundTint="#204A9E"
+        android:layout_marginBottom="200dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/quitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="4dp"
+        android:text="Quit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="140dp"
+        android:backgroundTint="#204A9E"
+        android:layout_marginHorizontal="70dp"
+        />
+</RelativeLayout>
